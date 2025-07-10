@@ -1,0 +1,148 @@
+.mission-section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0b3c5d;
+  margin-bottom: 20px;
+}
+
+.mission-desc {
+  font-size: 1.125rem;
+  color: #4a7b9d;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.mission-card {
+  flex: 1 1 200px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 28px;
+  background-color: #f1f1f1;
+}
+
+.icon-circle.blue {
+  background-color: #e1ebf4;
+  color: #0b3c5d;
+}
+
+.icon-circle.green {
+  background-color: #e4f7f3;
+  color: #25a78d;
+}
+
+.icon-circle.red {
+  background-color: #faeaea;
+  color: #d94c4c;
+}
+
+.mission-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0b3c5d;
+  margin-bottom: 10px;
+}
+
+.mission-card p {
+  color: #4a7b9d;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+
+/* ==========================core value section====================== */
+
+
+.core-values-section {
+  background-color: #f3fdf6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.core-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0b3c5d;
+  margin-bottom: 40px;
+}
+
+.core-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.core-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 25px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.core-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 28px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.core-icon.red {
+  background-color: #fdebec;
+  color: #d94c4c;
+}
+
+.core-icon.green {
+  background-color: #e4f7f3;
+  color: #25a78d;
+}
+
+.core-icon.blue {
+  background-color: #e1ebf4;
+  color: #0b3c5d;
+}
+
+.core-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0b3c5d;
+  margin-bottom: 15px;
+}
+
+.core-card p {
+  font-size: 0.95rem;
+  color: #4a7b9d;
+  line-height: 1.5;
+}
