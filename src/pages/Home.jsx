@@ -10,6 +10,7 @@ import heroImage from '../assets/heroimg.png';
 
 
 
+
 const HeroSection = () => {
   return (
     <div>
