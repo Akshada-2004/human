@@ -30,6 +30,8 @@ const features = [
 
 const Why = () => {
   return (
+    <div>
+
     <section className="why-choose-section">
       <h2 className="why-title">Why Choose MediTrain</h2>
       <p className="why-subtitle">
@@ -52,6 +54,16 @@ const Why = () => {
         ))}
       </div>
     </section>
+
+    <section className="why-cta">
+      <h2 className="why-cta-title">Ready to Experience the MediTrain Difference?</h2>
+      <p className="why-cta-desc">
+        Contact us today to learn more about our services or to schedule a transfer.
+      </p>
+      <button className="why-cta-button">Get in Touch</button>    
+</section>
+      
+    </div>
   );
 };
 
