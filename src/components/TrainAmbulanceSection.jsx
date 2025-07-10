@@ -4,7 +4,35 @@ import './TrainAmbulanceSection.css';
 import '../App.css';
 import '../index.css';
 
+      
+
 const TrainAmbulanceSection = () => {
+   const items = [
+    {
+      label: "Patient Monitor",
+      icon: "fas fa-heartbeat",
+      bgColor: "#20c997",
+      textColor: "text-success",
+    },
+    {
+      label: "Ventilator",
+      icon: "fas fa-lungs",
+      bgColor: "#1e3a5f",
+      textColor: "text-dark",
+    },
+    {
+      label: "Defibrillator",
+      icon: "fas fa-bolt",
+      bgColor: "#dc3545",
+      textColor: "text-danger",
+    },
+    {
+      label: "Oxygen Supply",
+      icon: "fas fa-wind",
+      bgColor: "#20c997",
+      textColor: "text-success",
+    },
+  ];
   return (
     <section id="services" className="train-section">
       <div className="container">
@@ -25,7 +53,7 @@ const TrainAmbulanceSection = () => {
                   <div className="icon-circle accent">
                     <Train />
                   </div>
-                  <h3 className="card-title">Mobile ICU on Rails</h3>
+                  <h3 className="card-title text-align-start">Mobile ICU on Rails</h3>
                 </div>
 
                 <p className="card-description">
@@ -68,13 +96,16 @@ const TrainAmbulanceSection = () => {
                   </div>
                 </div>
 
-                <button className="cta-button">
-                  <Phone className="phone-icon" />
-                  Book Train Ambulance
-                </button>
+              <div className="button-wrapper">
+  <button className="cta-button">
+    <Phone className="phone-icon" />
+    Book Train Ambulance
+  </button>
+</div>
+
               </div>
 
-              <div className="illustration">
+              {/* <div className="illustration">
                 <div className="illustration-wrapper">
                   <div className="compartment-header">
                     <h4>MEDICAL COMPARTMENT</h4>
@@ -110,7 +141,58 @@ const TrainAmbulanceSection = () => {
                     </div>
                   </div>
                 </div>
+              </div> */}
+              
+  <div className="container d-flex justify-content-end py-5">
+      <div className="bg-white rounded-4 shadow-lg p-4" style={{ paddingTop: "20px" }}>
+        {/* Title */}
+        <div className="text-center mb-4">
+           <div className="rounded-3 p-3 mb-2" style={{ backgroundColor: "#F56565" }}>
+                <h4 className="text-white fw-bold mb-1">MEDICAL COMPARTMENT</h4>
+                <p className="text-white small mb-0 opacity-75">ICU Setup Inside Train</p>
               </div>
+        </div>
+
+        {/* Equipment Cards Grid */}
+        <div className="row g-3 mb-3">
+          {items.map((item, index) => (
+            <div className="col-6" key={index}>
+              <div className="bg-white rounded-3 shadow-sm text-center p-3">
+                <div
+                  className="rounded-circle mx-auto d-flex align-items-center justify-content-center mb-2"
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    backgroundColor: item.bgColor,
+                  }}
+                >
+                  <i className={`${item.icon} text-white`}></i>
+                </div>
+                <p className={`mb-0 fw-semibold small ${item.textColor}`}>{item.label}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Doctor On Board */}
+        <div className="bg-white rounded-3 shadow-sm p-3 d-flex align-items-center">
+          <div
+            className="rounded-circle d-flex align-items-center justify-content-center me-3"
+            style={{
+              width: "40px",
+              height: "40px",
+              backgroundColor: "#20c997",
+            }}
+          >
+            <i className="fas fa-user-md text-white"></i>
+          </div>
+          <div>
+            <p className="mb-0 fw-bold text-success small">Dr. On Board</p>
+            <p className="mb-0 text-muted small">24/7 Care</p>
+          </div>
+        </div>
+      </div>
+    </div>
             </div>
           </div>
         </div>

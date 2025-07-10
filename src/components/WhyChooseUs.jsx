@@ -1,10 +1,17 @@
 import React from 'react';
 import './whychooseus.css';
 
+
+
+
 const WhyChooseUs = () => {
   return (
+    <div> 
+
+
+
     <section className="why-choose-section">
-      <h3 className="section-subtitle">Why Choose MediTrain</h3>
+      <span className="section-subtitle">Why Choose MediTrain</span>
       <h2 className="section-title">Trusted by Families Across India</h2>
       <p className="section-desc">
         When your loved one needs emergency medical transport, trust matters most. <br />
@@ -78,6 +85,9 @@ const WhyChooseUs = () => {
         </div>
       </div>
     </section>
+    
+
+    </div>
   );
 };
 

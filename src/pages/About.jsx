@@ -18,22 +18,22 @@ const About = () => {
       </p>
       <div className="mission-grid">
         <div className="mission-card">
-          <div className="icon-circle blue">🎯</div>
+          <div className="icon-circle1 blue">🎯</div>
           <h3>Accessibility</h3>
           <p>Making quality medical transport accessible to every family</p>
         </div>
         <div className="mission-card">
-          <div className="icon-circle green">🏅</div>
+          <div className="icon-circle1 green">🏅</div>
           <h3>Excellence</h3>
           <p>Maintaining the highest standards in medical care</p>
         </div>
         <div className="mission-card">
-          <div className="icon-circle red">❤️</div>
+          <div className="icon-circle1 red">❤️</div>
           <h3>Compassion</h3>
           <p>Treating every patient with dignity and care</p>
         </div>
         <div className="mission-card">
-          <div className="icon-circle blue">🕒</div>
+          <div className="icon-circle1 blue">🕒</div>
           <h3>Reliability</h3>
           <p>Always there when you need us most</p>
         </div>
